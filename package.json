@@ -1,0 +1,25 @@
+{
+  "name": "promise-pauser",
+  "version": "1.0.0",
+  "description": "Library for pausing promise chains",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "promises",
+    "promise",
+    "pause",
+    "pausing"
+  ],
+  "author": "Tom Eklöf <tomek@unity3d.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.25"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "chai-as-promised": "^5.0.0",
+    "mocha": "^2.2.4"
+  }
+}
