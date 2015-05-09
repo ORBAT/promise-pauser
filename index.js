@@ -14,7 +14,7 @@ function defer() {
   Calling pause when paused, or unpause when unpaused will result in an exception.
   */
 function pauser() {
-  return {
+  var o =  {
     paused: false,
     pause: function pause() {
       if(this.paused) {
@@ -32,6 +32,10 @@ function pauser() {
       this.paused = false;
     }
   }
+
+  o.pause = o.pause.bind(o);
+  o.unpause = o.unpause.bind(o);
+  return o;
 }
 
 exports.pauser = pauser;
