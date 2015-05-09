@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Library for pausing promise chains",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ORBAT/promise-pauser.git"
+  },
   "scripts": {
     "test": "mocha"
   },
